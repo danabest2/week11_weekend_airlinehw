@@ -14,20 +14,18 @@ import java.util.ArrayList;
 
 public class Flight {
     private ArrayList<Passenger> passengerList;
-    public PlaneType planeType;
+    public Plane plane;
     private String flightNumber;
     private FlightDestCode destinationAirport;
     private FlightDepartCode departureAirport;
     private String departureTime;
 
-    public Flight(PlaneType planeType, String flightNumber,
+    public Flight(Plane plane, String flightNumber,
                   FlightDestCode destinationAirport,
                   FlightDepartCode departureAirport,
-                  String departureTime)
-
-    {
+                  String departureTime) {
         this.passengerList = new ArrayList<Passenger>();
-        this.planeType = planeType;
+        this.plane = plane;
         this.flightNumber = flightNumber;
         this.destinationAirport = destinationAirport;
         this.departureAirport = departureAirport;
@@ -36,7 +34,11 @@ public class Flight {
     }
 
 
-    public Flight(PlaneType boeing777) {
 
-    }
+    // private Flight(PlaneType boeing777) {
+    //return this.plane;
+    //}
+
 }
+
+

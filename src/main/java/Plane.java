@@ -25,6 +25,9 @@ public class Plane {
         return this.planeType.getWeight();
     }
 
+    public int getSeatscapacity() {
+        return this.planeType.getSeatscapacity();
+    }
 }
 
 
