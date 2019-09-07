@@ -7,7 +7,7 @@ public class FlightTest {
     Flight flight;
     PlaneType planeType;
     Plane plane;
-
+    Passenger passenger;
 
     @Before
 
@@ -21,6 +21,12 @@ public class FlightTest {
         assertEquals(150, plane.getSeatscapacity());
     }
 
+
+    @Test
+    public void canAddPassengerToFlight() {
+        flight.addPassenger(passenger);
+        assertEquals(1, flight.countPassengers());
+    }
    // @Test
     //private void getPlaneTypeFromEnum() {
         //assertEquals//(PlaneType.Boeing777, plane.getPlaneType());

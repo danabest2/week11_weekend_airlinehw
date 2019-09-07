@@ -34,11 +34,13 @@ public class Flight {
     }
 
 
+    public void addPassenger(Passenger passenger) {
+        this.passengerList.add(passenger);
+    }
 
-    // private Flight(PlaneType boeing777) {
-    //return this.plane;
-    //}
-
+    public int countPassengers() {
+        return this.passengerList.size();
+    }
 }
 
 
