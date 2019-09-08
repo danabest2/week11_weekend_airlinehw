@@ -40,9 +40,9 @@ public class FlightManagerTest {
         assertEquals(30, flight.passengertotalbagsweight());
     }
 
-    //@Test
-   // public void getRemainingFlightAvailableWieight(){
-       // flight.addPassenger(passenger);
-        //assertEquals(1470, this.plane.getPlaneTypeReaminingWeight());
-    //}
+    @Test
+    public void getRemainingFlightAvailableWieight(){
+        flight.addPassenger(passenger);
+        assertEquals(1470, this.plane.getPlaneTypeReaminingWeight(flight));
+    }
 }

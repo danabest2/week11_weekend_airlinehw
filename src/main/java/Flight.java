@@ -61,6 +61,9 @@ public class Flight {
         final int i = totalBaggages123 * this.plane.bagweightperperson();
         return i;
         }
+
+
+
     }
 
 

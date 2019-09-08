@@ -1,4 +1,5 @@
 public class Plane {
+    public int getPlaneTypeweight;
     private PlaneType planeType;
 
 
@@ -46,9 +47,14 @@ public class Plane {
         return 1;
     }
 
-    //public int getPlaneTypeReaminingWeight() {
-        //return this.planeType.weight - passengerList.passengertotalbagsweight()
-    //}
+    public int getPlaneTypeReaminingWeight(Flight flight) {
+        return this.bagsweight() - flight.passengertotalbagsweight();
+    }
+
+    private int getPlaneTypeweight() {
+        final int weight = this.planeType.weight;
+        return weight;
+    }
 }
 
 
