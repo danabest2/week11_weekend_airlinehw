@@ -33,7 +33,6 @@ public class Flight {
 
     }
 
-
     public void addPassenger(Passenger passenger) {
         this.passengerList.add(passenger);
     }
@@ -45,7 +44,8 @@ public class Flight {
     public int planeSeatscapacity() {
         return this.plane.countSeatscapacity() - this.passengerList.size();
     }
-}
 
+
+}
 
 

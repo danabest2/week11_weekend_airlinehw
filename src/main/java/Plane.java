@@ -18,19 +18,24 @@ public class Plane {
 
 
     public int countSeatscapacity() {
+
         return this.planeType.getSeatscapacity();
     }
 
     public int countWeight() {
+
         return this.planeType.getWeight();
     }
 
     public int getSeatscapacity() {
+
         return this.planeType.getSeatscapacity();
     }
 
 
-
+    public int bagsweight() {
+        return this.planeType.weight / 2;
+    }
 }
 
 

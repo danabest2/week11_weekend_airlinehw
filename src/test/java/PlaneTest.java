@@ -23,6 +23,7 @@ public class PlaneTest {
     @Test
 
     public void checkPlaneWeight(){
+
         assertEquals(3000, plane.countWeight());
     }
 }

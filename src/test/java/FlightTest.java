@@ -14,7 +14,10 @@ public class FlightTest {
     public void before(){
         plane = new Plane(PlaneType.Boeing777);
         flight = new Flight (plane, "50", FlightDestCode.OTP, FlightDepartCode.EDI, "10:50");
+        passenger = new Passenger("Stefan", 3);
     }
+
+
 
     @Test
     public void canGetAvailableSeats(){
@@ -29,14 +32,16 @@ public class FlightTest {
     }
 
     @Test
-
     public void canCheckReaminingAvailableSeats(){
         flight.addPassenger(passenger);
         assertEquals(149, flight.planeSeatscapacity());
     }
-   // @Test
-    //private void getPlaneTypeFromEnum() {
-        //assertEquals//(PlaneType.Boeing777, plane.getPlaneType());
+
+    //@Test
+    //public void canAddNewPassengerIfAvaivalbleSeats(){
+       // //flight.addPassenger(passenger);
+       // assertEquals(149, flight.plane.getPlaneTypeUpdatedSeatscapacity());
+
     //}
 
 }
