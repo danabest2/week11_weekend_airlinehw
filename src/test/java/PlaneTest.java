@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class PlaneTest {
 
     Plane plane;
+    Flight flight;
 
     @Before
 

@@ -7,7 +7,7 @@ public class Plane {
     }
 
 
-    public PlaneType getPlaneType(){
+    public PlaneType getPlaneType() {
         return this.planeType;
     }
 
@@ -28,6 +28,9 @@ public class Plane {
     public int getSeatscapacity() {
         return this.planeType.getSeatscapacity();
     }
+
+
+
 }
 
 

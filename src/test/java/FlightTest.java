@@ -27,6 +27,13 @@ public class FlightTest {
         flight.addPassenger(passenger);
         assertEquals(1, flight.countPassengers());
     }
+
+    @Test
+
+    public void canCheckReaminingAvailableSeats(){
+        flight.addPassenger(passenger);
+        assertEquals(149, flight.planeSeatscapacity());
+    }
    // @Test
     //private void getPlaneTypeFromEnum() {
         //assertEquals//(PlaneType.Boeing777, plane.getPlaneType());

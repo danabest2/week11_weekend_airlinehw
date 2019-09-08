@@ -41,6 +41,11 @@ public class Flight {
     public int countPassengers() {
         return this.passengerList.size();
     }
+
+    public int planeSeatscapacity() {
+        return this.plane.countSeatscapacity() - this.passengerList.size();
+    }
 }
+
 
 
