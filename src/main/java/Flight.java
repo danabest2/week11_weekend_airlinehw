@@ -34,9 +34,15 @@ public class Flight {
 
     }
 
-    public void addPassenger(Passenger passenger) {
+    public String addPassenger(Passenger passenger) {
+        if(planeSeatscapacity()>0){
+                this.passengerList.add(passenger);
+                return "Passenger added successfully.";
 
-        this.passengerList.add(passenger);
+        } else {
+            return "Sorry, not enough sits on this flight.";
+        }
+
     }
 
     public int countPassengers() {
@@ -45,7 +51,6 @@ public class Flight {
     }
 
     public int planeSeatscapacity() {
-
         return this.plane.countSeatscapacity() - this.passengerList.size();
     }
 
