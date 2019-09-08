@@ -19,6 +19,7 @@ public class Flight {
     private FlightDestCode destinationAirport;
     private FlightDepartCode departureAirport;
     private String departureTime;
+    private Passenger passenger;
 
     public Flight(Plane plane, String flightNumber,
                   FlightDestCode destinationAirport,
@@ -34,18 +35,26 @@ public class Flight {
     }
 
     public void addPassenger(Passenger passenger) {
+
         this.passengerList.add(passenger);
     }
 
     public int countPassengers() {
+
         return this.passengerList.size();
     }
 
     public int planeSeatscapacity() {
+
         return this.plane.countSeatscapacity() - this.passengerList.size();
     }
 
 
+    public int passengertotalbagsweight() {
+        int i = (this.passengerList.size() * this.plane.bagweightperperson()) *
+                this.passenger.hasBags();
+        return i;
+    }
 }
 
 

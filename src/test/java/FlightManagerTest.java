@@ -27,4 +27,15 @@ public class FlightManagerTest {
         assertEquals(10, plane.bagweightperperson());
     }
 
+
+    @Test
+    public void getCurrentPassengerNoOfBags(){
+        assertEquals(3, passenger.hasBags());
+    }
+
+
+    @Test
+    public void getWeightOfCurrentPassenger(){
+        assertEquals(30, flight.passengertotalbagsweight());
+    }
 }
