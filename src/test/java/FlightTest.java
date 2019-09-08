@@ -43,11 +43,11 @@ public class FlightTest {
         flight.addPassenger(passenger);
         assertEquals(3, passenger.hasBags());
     }
-    //@Test
-    //public void canAddNewPassengerIfAvaivalbleSeats(){
-       // //flight.addPassenger(passenger);
-       // assertEquals(149, flight.plane.getPlaneTypeUpdatedSeatscapacity());
+    @Test
+    public void canAddNewPassengerIfAvaivalbleSeats(){
+       flight.addPassenger(passenger);
+       assertEquals(149, flight.plane.getPlaneTypeUpdatedSeatscapacity());
 
-    //}
+    }
 
 }

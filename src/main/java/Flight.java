@@ -51,10 +51,17 @@ public class Flight {
 
 
     public int passengertotalbagsweight() {
-        int i = (this.passengerList.size() * this.plane.bagweightperperson()) *
-                this.passenger.hasBags();
+        //System.out.println(this.passengerList.size());
+        //return 30;
+        int totalBaggages123 =0;
+            for (int i = 0; i < this.passengerList.size(); i ++){
+                totalBaggages123 = totalBaggages123 + passengerList.get(i).hasBags();
+
+            }
+        final int i = totalBaggages123 * this.plane.bagweightperperson();
         return i;
+        }
     }
-}
+
 
 

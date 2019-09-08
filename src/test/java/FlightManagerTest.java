@@ -36,6 +36,13 @@ public class FlightManagerTest {
 
     @Test
     public void getWeightOfCurrentPassenger(){
+        flight.addPassenger(passenger);
         assertEquals(30, flight.passengertotalbagsweight());
     }
+
+    //@Test
+   // public void getRemainingFlightAvailableWieight(){
+       // flight.addPassenger(passenger);
+        //assertEquals(1470, this.plane.getPlaneTypeReaminingWeight());
+    //}
 }

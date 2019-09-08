@@ -40,6 +40,15 @@ public class Plane {
     public int bagweightperperson() {
         return this.bagsweight() / this.countSeatscapacity();
     }
+
+    public int getPlaneTypeUpdatedSeatscapacity() {
+
+        return 1;
+    }
+
+    //public int getPlaneTypeReaminingWeight() {
+        //return this.planeType.weight - passengerList.passengertotalbagsweight()
+    //}
 }
 
 
