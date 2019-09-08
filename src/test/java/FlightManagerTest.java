@@ -22,5 +22,9 @@ public class FlightManagerTest {
         assertEquals(1500, plane.bagsweight());
     }
 
-    
+    @Test
+    public void getWeightOfBagPerPerson(){
+        assertEquals(10, plane.bagweightperperson());
+    }
+
 }
